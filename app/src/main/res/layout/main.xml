@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.martin.tspz_lab1.MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:elevation="0dp"
+        android:onClick="onButtonClick"
+        android:text="Давайте знакомиться!"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="503dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:hint="Представьтесь :)"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="56dp"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="onImageClick"
+        app:srcCompat="?android:attr/fingerprintAuthDrawable"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="234dp" />
+
+</RelativeLayout>
